@@ -1,4 +1,3 @@
-# Proxy API to Google Compute Engine
 
 ## Description
 This is a service that can be used to spawn cloud instances and configures them with a given username/password and responds with the newly created instance’s IP address.
