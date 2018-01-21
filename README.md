@@ -1,23 +1,3 @@
-
-## Description
-This is a service that can be used to spawn cloud instances and configures them with a given username/password and responds with the newly created instance’s IP address.
-The service listens TCP port and accept on HTTP requests.
-
-Available next endpoints:
-
-* GET /healthcheck
-
-Implements a basic health check, returning HTTP status code 200 and a blank page.
-
-* POST /v1/instances/create
-
-Receives an username and a password as query parameters and responds with an IP address.
-This endpoint creates a cloud instance, configures a user with the given username and password, enable password authentication, and add the user to sudoers.
-
-* POST /v1/instances/ip
-
-Receives an instance name as query parameters and responds with an IP address.
-
 ## Setup
 Before run service, it should be configured in a proper way.
 1. Enable the Compute Engine API in [console](https://console.developers.google.com/apis/api/compute).
